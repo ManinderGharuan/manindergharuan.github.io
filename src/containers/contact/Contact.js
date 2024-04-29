@@ -1,14 +1,22 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {illustration, contactInfo, isHireable} from "../../portfolio";
 import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
+let hireable = "No";
+if (isHireable) {
+  hireable = "Yes";
+}
+
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
+
+  
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -49,9 +57,17 @@ export default function Contact() {
               </a>
               <br />
               <br />
+              
+              <div className="opp-div">
+                <span className="desc-prof">
+                  Open for opportunities: {hireable}
+                </span>
+              </div>
+            
               <SocialMedia />
             </div>
           </div>
+
           <div className="contact-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={email} />
@@ -61,6 +77,14 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )}
+          </div>
+
+          <div className="image-content-profile">
+            <img
+              alt="Man working"
+              src={contactInfo.profileImage}
+              className="profile-image"
+            />
           </div>
         </div>
       </div>
