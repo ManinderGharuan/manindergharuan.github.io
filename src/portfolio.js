@@ -61,9 +61,7 @@ const skillsSection = {
       "⚡ React.js: Component structure, state management (Redux, Context API)"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS"
-    ),
+    emoji("⚡ Integration of third party services such as Firebase/ AWS"),
     emoji(
       "⚡ APIs and Integrations: Experience with integrating external APIs."
     ),
@@ -125,12 +123,16 @@ const educationInfo = {
       schoolName: "Chandigarh University",
       logo: require("./assets/images/cu.jpeg"),
       subHeader: "Bachelor of Computer Applications",
+      desc: "",
+      descBullets: [],
       duration: "August 2015 - May 2018"
     },
     {
       schoolName: "Punjab School Eduction Board",
       logo: require("./assets/images/pseb.jpg"),
       subHeader: "12th",
+      desc: "",
+      descBullets: [],
       duration: "April 2014 - March 2015"
     }
   ]
@@ -160,7 +162,7 @@ const techStack = {
     {
       Stack: "Git",
       progressPercentage: "90%"
-    },  
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -213,9 +215,27 @@ const bigProjects = {
   subtitle: "Playground | Where Ideas Take Shape",
   projects: [
     {
+      image: require("./assets/images/tickerlines.png"),
+      projectName: "TickerLines",
+      projectDesc:
+        "It creates technical opportunities and solutions for traders and analysts of financial markets. The Wheel of 24 is made up of several different components; each one can be fully customised and has a specific purpose to allow access to all required information. (Under Development)",
+      descBullets: [],
+      footerLink: [
+        {
+          name: "Gann Wheel",
+          url: "https://tickerlines-admin.suffescom.dev/gann-wheel"
+        },
+        {
+          name: "Showcase",
+          url: "/showcase/tickerlines.webm"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/dws.png"),
-      projectName: "The wild west",
-      projectDesc: "Centralized platform that allows users to speculate on the price movement of cryptocurrency pairs like BTC/USD within a short timeframe (typically 5 minutes)",
+      projectName: "The Wild West",
+      projectDesc:
+        "Centralized platform that allows users to speculate on the price movement of cryptocurrency pairs like BTC/USD within a short timeframe (typically 5 minutes)",
       footerLink: [
         {
           name: "Website",
@@ -230,7 +250,8 @@ const bigProjects = {
     {
       image: require("./assets/images/abid.png"),
       projectName: "Abid NFT Marketplace",
-      projectDesc: "NFT marketplace where user can mint land and sell it on platform or can give on rent",
+      projectDesc:
+        "NFT marketplace where user can mint land and sell it on platform or can give on rent",
       footerLink: [
         {
           name: "Website",
@@ -243,13 +264,76 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/thetastyplate.png"),
+      projectName: "The Tasty Plate",
+      projectDesc:
+        "A meal preparation platform where user can buy meals based on nutritionally balanced and deliverd directly to door each week",
+      descBullets: [],
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://thetastyplate.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/fansroom.png"),
+      projectName: "Fans Room",
+      projectDesc:
+        "Adult platform designed to connect content creators and fans in personalized way. Similar to platforms like OnlyFans. Creators can share content, including photos, videos, and live streams.",
+      descBullets: [],
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://fansroom.com/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/hlc.png"),
       projectName: "Hyperlocal Cloud Platform",
-      projectDesc: "Software development platform specializing in creating on-demand mobile and web applications, with a focus on solutions to clients' specific needs",
+      projectDesc:
+        "Software development platform specializing in creating on-demand mobile and web applications, with a focus on solutions to clients' specific needs",
       footerLink: [
         {
           name: "Business Website",
           url: "https://hyperlocalcloud.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/peitaxi.png"),
+      projectName: "PEI Taxi",
+      projectDesc: "",
+      footerLink: [
+        {
+          name: "User App (Android)",
+          url: "https://play.google.com/store/apps/details?id=bz.pie.rider&pli=1"
+        },
+        {
+          name: "User App (App Store)",
+          url: "https://apps.apple.com/us/app/pei-taxi/id1479673552"
+        },
+        {
+          name: "Driver App (Android)",
+          url: "https://play.google.com/store/apps/details?id=bz.pei.driver"
+        },
+
+        {
+          name: "Driver App (App Store)",
+          url: "https://apps.apple.com/us/app/pei-taxi-driver/id1517970069"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/talkie.png"),
+      projectName: "Talkie",
+      projectDesc:
+        "Speaking a foreign language isn’t always easy. Talkie is an app that helps your students learn by doing Little but often. This app has three modules Admin, Teacher, Student",
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://talkietheapp.com/"
         }
       ]
     }
@@ -325,9 +409,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    ""
-  ],
+  podcast: [""],
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -346,7 +428,7 @@ const contactInfo = {
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91-7658887533",
   email_address: "maninderrai7@gmail.com",
-  profileImage: require("./assets/images/pp.png"),
+  profileImage: require("./assets/images/pp.png")
 };
 
 // Twitter Section
