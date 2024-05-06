@@ -11,7 +11,7 @@ import {
   blogSection,
   talkSection,
   achievementSection,
-  resumeSection
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
-  const viewResume = resumeSection.display;
+  const viewProjects = bigProjects.display;
 
   return (
     <Headroom>
@@ -32,7 +32,9 @@ function Header() {
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
+
         <input className="menu-btn" type="checkbox" id="menu-btn" />
+
         <label
           className="menu-icon"
           htmlFor="menu-btn"
@@ -40,6 +42,7 @@ function Header() {
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
+
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
@@ -51,40 +54,47 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
+
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
             </li>
           )}
+
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
           )}
+
           {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
           )}
+
           {viewTalks && (
             <li>
               <a href="#talks">Talks</a>
             </li>
           )}
-          {viewResume && (
+
+          {viewProjects && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
+
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
+
+          {/* <li> */}
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          {/* <a>
               <ToggleSwitch />
-            </a>
-          </li>
+            </a> */}
+          {/* </li> */}
         </ul>
       </header>
     </Headroom>
