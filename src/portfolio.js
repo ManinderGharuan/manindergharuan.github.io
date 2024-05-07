@@ -326,6 +326,18 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/educify.png"),
+      projectName: "Educify",
+      projectDesc:
+        "Educify is a global Educational Technology company focused on making education accessible to everyone in every subject possible and in all manner of ways; be it online, in-person, or as a course that is accessible anywhere in the world.",
+      footerLink: [
+        {
+          name: "Website",
+          url: "https://www.educify.org/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/talkie.png"),
       projectName: "Talkie",
       projectDesc:
