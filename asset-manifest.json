@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e24cd5e1.css",
-    "main.js": "/static/js/main.24ef9f86.js",
+    "main.js": "/static/js/main.e5f89e91.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.fd473228.chunk.js": "/static/js/64.fd473228.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -16,6 +16,7 @@
     "static/media/thetastyplate.png": "/static/media/thetastyplate.84701ccea03e3e4b3041.png",
     "static/media/abid.png": "/static/media/abid.545f00c4580e2d0f1a75.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/educify.png": "/static/media/educify.1df1cea16d3b1afb5623.png",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/tickerlines.png": "/static/media/tickerlines.8424f95c2218a30fb3d2.png",
@@ -26,7 +27,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.e24cd5e1.css.map": "/static/css/main.e24cd5e1.css.map",
-    "main.24ef9f86.js.map": "/static/js/main.24ef9f86.js.map",
+    "main.e5f89e91.js.map": "/static/js/main.e5f89e91.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.fd473228.chunk.js.map": "/static/js/64.fd473228.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -34,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.e24cd5e1.css",
-    "static/js/main.24ef9f86.js"
+    "static/js/main.e5f89e91.js"
   ]
 }
