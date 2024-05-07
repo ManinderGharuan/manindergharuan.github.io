@@ -15,8 +15,6 @@ if (isHireable) {
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
 
-  
-
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -57,13 +55,13 @@ export default function Contact() {
               </a>
               <br />
               <br />
-              
+
               <div className="opp-div">
                 <span className="desc-prof">
                   Open for opportunities: {hireable}
                 </span>
               </div>
-            
+
               <SocialMedia />
             </div>
           </div>
