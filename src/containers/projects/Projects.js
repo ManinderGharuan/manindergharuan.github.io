@@ -33,7 +33,9 @@ export default function Projects() {
           setrepoFunction("Error");
         });
     };
-    getRepoData();
+    if (openSource.display) {
+      getRepoData();
+    }
   }, []);
 
   function setrepoFunction(array) {
